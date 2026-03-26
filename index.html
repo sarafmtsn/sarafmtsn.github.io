@@ -1,82 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Psicóloga Sara</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- TIDIO -->
-  <script src="//code.tidio.co/f8tbcsrgfqjaya8fffwvvjn4c8z2nj7s.js" async></script>
+<title>Psicóloga Sara</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #eef2f3, #ffffff);
-    }
+<!-- TIDIO -->
+<script src="//code.tidio.co/f8tbcsrgfqjaya8fffwvvjn4c8z2nj7s.js" async></script>
 
-    .hero {
-      background: linear-gradient(135deg, #4a6fa5, #6b9ac4);
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
-      border-bottom-left-radius: 30px;
-      border-bottom-right-radius: 30px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #f5f5f5;
+}
 
-    .container {
-      max-width: 600px;
-      margin: -40px auto;
-      padding: 20px;
-    }
+/* HERO con imagen */
+.hero {
+  background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  text-align: center;
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+}
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 18px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
+.hero h1 {
+  font-size: 36px;
+  margin: 0;
+}
 
-    button {
-      width: 100%;
-      padding: 15px;
-      border-radius: 12px;
-      border: none;
-      background: #4a6fa5;
-      color: white;
-      font-size: 16px;
-    }
-  </style>
+.hero p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Botón */
+.btn {
+  margin: 30px auto;
+  display: block;
+  padding: 12px 25px;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Secciones */
+.section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.section h2 {
+  font-size: 18px;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 10px auto;
+  color: #444;
+}
+
+/* Grid imágenes */
+.grid {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* columnas */
+.col {
+  flex: 1;
+  text-align: center;
+}
+
+.col h3 {
+  margin-top: 10px;
+  text-decoration: underline;
+}
+</style>
 
 </head>
 
 <body>
 
-  <div class="hero">
-    <h1>Psicóloga Sara</h1>
-    <p>Un espacio seguro para tu bienestar emocional</p>
-  </div>
+<!-- HERO -->
+<div class="hero">
+  <h1>SARA MITRE<br>SANTACOLOMA</h1>
+  <p>Psicóloga Psicoterapeuta Cognitivo Conductual</p>
+</div>
 
-  <div class="container">
-
-    <div class="card">
-      <h2>Sobre mí</h2>
-      <p>Acompaño procesos emocionales desde la empatía y la escucha consciente.</p>
-    </div>
-
-    <div class="card">
-      <h2>Servicios</h2>
-      <p>Terapia individual • Ansiedad • Depresión</p>
-    </div>
-
-    <button onclick="window.location.href='https://wa.me/50767208282?text=Hola,%20me%20gustaría%20agendar%20una%20cita'">
+<!-- BOTÓN -->
+<button class="btn" onclick="window.location.href='https://wa.me/50767208282?text=Hola,%20me%20gustaría%20agendar%20una%20cita'">
   Agenda tu cita
 </button>
-      Agenda tu cita
-    </button>
 
+<!-- TEXTO -->
+<div class="section">
+  <h2>¿Cómo puedo acompañarte hoy?</h2>
+  <p>
+    Acompañamiento psicológico desde un enfoque cognitivo-conductual en casos de ansiedad,
+    depresión y dificultades en las relaciones interpersonales.
+  </p>
+</div>
+
+<!-- IMÁGENES -->
+<div class="grid">
+
+  <div class="col">
+    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+    <h3>SOBRE MI</h3>
   </div>
+
+  <div class="col">
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+    <h3>SERVICIOS</h3>
+  </div>
+
+  <div class="col">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+    <h3>PODCAST</h3>
+  </div>
+
+</div>
 
 </body>
 </html>
