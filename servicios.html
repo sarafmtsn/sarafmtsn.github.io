@@ -22,10 +22,19 @@ h1 {
   font-size: 28px;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   letter-spacing: 1px;
   background: #eeeeee;
   padding: 14px 0;
+}
+
+/* SEPARADOR DE LÍNEA */
+.separator {
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 10px auto 30px auto;
+  border-radius: 2px;
 }
 
 /* SECCIONES */
@@ -65,9 +74,9 @@ h1 {
   line-height: 1.6;
 }
 
-/* BOTÓN WHATSAPP */
+/* BOTONES */
 .btn {
-  margin: 30px auto 60px auto; /* espacio inferior grande ~3cm */
+  margin: 30px auto 20px auto; /* espacio inferior suficiente */
   display: block;
   padding: 12px 25px;
   border: 1px solid black;
@@ -90,6 +99,9 @@ h1 {
 
 <!-- TÍTULO PRINCIPAL -->
 <h1>SERVICIOS</h1>
+
+<!-- SEPARADOR -->
+<div class="separator"></div>
 
 <!-- SECCIÓN: PROCESO TERAPÉUTICO -->
 <div class="section">
@@ -148,6 +160,11 @@ h1 {
 <!-- BOTÓN WHATSAPP -->
 <button class="btn" onclick="window.location.href='https://wa.me/50767208282?text=Hola,%20me%20gustaría%20agendar%20un%20servicio'">
   Agenda tu servicio ahora
+</button>
+
+<!-- BOTÓN VOLVER A INICIO -->
+<button class="btn" onclick="window.location.href='index.html'">
+  Volver a inicio
 </button>
 
 </body>
