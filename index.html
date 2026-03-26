@@ -80,11 +80,6 @@ body {
   color: white;
 }
 
-/* ESPACIO INFERIOR BOTÓN DE INSTAGRAM */
-.btn-instagram {
-  margin-bottom: 20px; /* aprox. 1 cm */
-}
-
 /* SECCIÓN */
 .section {
   text-align: center;
@@ -181,6 +176,28 @@ body {
   40% { opacity: 0; transform: translateY(10px); }
   100% { opacity: 0; transform: translateY(10px); }
 }
+
+/* BOTÓN FLOTANTE DE INSTAGRAM */
+.instagram-flotante {
+  position: fixed;
+  bottom: 90px; /* ajusta según altura del chatbot */
+  right: 20px;
+  background: #E4405F; /* color Instagram */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  z-index: 9999; /* para que siempre esté encima */
+}
+
+.instagram-flotante:hover {
+  background: #c13584; /* color hover más oscuro */
+}
 </style>
 
 </head>
@@ -234,10 +251,10 @@ body {
   <span>“Tu bienestar es tu mejor inversión.”</span>
 </div>
 
-<!-- BOTÓN DE INSTAGRAM -->
-<button class="btn btn-instagram" onclick="window.location.href='https://www.instagram.com/psi.sarams/'">
+<!-- BOTÓN FLOTANTE DE INSTAGRAM -->
+<a href="https://www.instagram.com/psi.sarams/" target="_blank" class="instagram-flotante">
   Sígueme en Instagram
-</button>
+</a>
 
 </body>
 </html>
