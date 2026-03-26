@@ -7,23 +7,36 @@
 <title>Servicios - Psicóloga Sara</title>
 
 <!-- FUENTES PREMIUM -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: 'Georgia', serif;
+  font-family: 'Montserrat', sans-serif;
   background: #f5f5f5;
   text-align: center;
 }
 
-/* SECCIONES */
-.section {
-  text-align: center;
-  padding: 20px 20px 30px 20px;
+/* TÍTULO PRINCIPAL */
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 20px 0;
+  letter-spacing: 1px;
+  background: #eeeeee;
+  padding: 14px 0;
 }
 
-/* FRANJA GRIS TÍTULO */
+/* SECCIONES */
+.section {
+  text-align: left;
+  padding: 20px 20px 30px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* SUBTÍTULOS CON FRANJA GRIS */
 .section h2 {
   font-size: 20px;
   background: #eeeeee;
@@ -31,34 +44,30 @@ body {
   width: 100%;
   margin: 10px 0;
   letter-spacing: 1px;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 /* TEXTO DESCRIPTIVO */
 .section p {
-  max-width: 700px;
-  margin: 10px auto;
   color: #444;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* LISTAS */
+.section ul {
+  margin: 10px 0 10px 20px;
+  padding: 0;
+  color: #444;
   font-size: 16px;
   line-height: 1.6;
 }
 
-/* IMAGEN BLOQUE */
-.section img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 15px;
-  object-fit: cover;
-}
-
-/* BOTÓN */
+/* BOTÓN WHATSAPP */
 .btn {
-  margin: 25px auto 20px auto;
+  margin: 30px auto 60px auto; /* espacio inferior grande ~3cm */
   display: block;
   padding: 12px 25px;
   border: 1px solid black;
@@ -67,7 +76,6 @@ body {
   font-size: 16px;
   border-radius: 5px;
   transition: 0.3s;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 
@@ -80,29 +88,30 @@ body {
 </head>
 <body>
 
-<!-- SERVICIO: PROCESO TERAPÉUTICO -->
+<!-- TÍTULO PRINCIPAL -->
+<h1>SERVICIOS</h1>
+
+<!-- SECCIÓN: PROCESO TERAPÉUTICO -->
 <div class="section">
   <h2>PROCESO TERAPÉUTICO</h2>
-  <img src="https://i.postimg.cc/tRhTLJwQ/IMG-2533.jpg" alt="Proceso terapéutico">
   <p>
     Trabajo mediante procesos estructurados por paquetes de sesiones, ya que el cambio psicológico real requiere continuidad y compromiso. 
     El proceso inicia con una sesión de evaluación inicial, donde se explora la situación actual, objetivos terapéuticos y se diseña un plan de trabajo personalizado.
   </p>
   <p>
     Posteriormente, se recomienda iniciar un paquete de sesiones que permita:
-    <ul style="text-align:left; max-width:700px; margin:10px auto;">
-      <li>Profundizar en los patrones emocionales</li>
-      <li>Trabajar herramientas prácticas</li>
-      <li>Dar seguimiento y evaluación de avances</li>
-      <li>Sostener el proceso de transformación de forma consistente</li>
-    </ul>
   </p>
+  <ul>
+    <li>Profundizar en los patrones emocionales</li>
+    <li>Trabajar herramientas prácticas</li>
+    <li>Dar seguimiento y evaluación de avances</li>
+    <li>Sostener el proceso de transformación de forma consistente</li>
+  </ul>
 </div>
 
-<!-- SERVICIO: SESIONES -->
+<!-- SECCIÓN: SESIONES -->
 <div class="section">
   <h2>SESIONES</h2>
-  <img src="https://i.postimg.cc/tRhTLJwQ/IMG-2533.jpg" alt="Sesiones">
   <p><strong>PRESENCIALES</strong><br>
   Las sesiones presenciales están dirigidas a personas que prefieren acompañamiento terapéutico en un espacio físico, íntimo y estructurado.<br>
   Duración: 50-60 minutos.<br>
@@ -116,22 +125,12 @@ body {
   La modalidad virtual mantiene el mismo nivel de profesionalismo, confidencialidad y profundidad que la presencial, permitiendo acompañamiento continuo sin importar la ubicación.</p>
 </div>
 
-<!-- SERVICIO: OTROS SERVICIOS -->
+<!-- SECCIÓN: OTROS SERVICIOS -->
 <div class="section">
   <h2>OTROS SERVICIOS</h2>
-  <img src="https://i.postimg.cc/tRhTLJwQ/IMG-2533.jpg" alt="Otros servicios">
-  <p><strong>CERTIFICADOS DE SALUD MENTAL</strong><br>
-  Evaluación psicológica breve orientada a emitir constancia para:
-  Universidad, Matrimonio, Puesto laboral, Licencia de conducir, Traspaso de bienes, Mascota de apoyo emocional y más.</p>
   
-  <p><strong>TALLERES INFORMATIVOS Y DINÁMICOS</strong><br>
-  Diseñados para grupos o empresas que deseen trabajar habilidades emocionales y crecimiento personal de forma práctica e interactiva.</p>
-</div>
-
-<!-- BOTÓN WHATSAPP -->
-<button class="btn" onclick="window.location.href='https://wa.me/50767208282?text=Hola,%20me%20gustaría%20agendar%20un%20servicio'">
-  Agenda tu servicio ahora
-</button>
-
-</body>
-</html>
+  <p><strong>CERTIFICADOS DE SALUD MENTAL</strong><br>
+  Evaluación psicológica breve orientada a emitir constancia para:</p>
+  <ul>
+    <li>Universidad</li>
+    <li>Matr
