@@ -7,7 +7,7 @@
 <title>Psicóloga Sara</title>
 
 <!-- FUENTES PREMIUM -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- TIDIO -->
 <script src="//code.tidio.co/f8tbcsrgfqjaya8fffwvvjn4c8z2nj7s.js" async></script>
@@ -62,7 +62,7 @@ body {
 
 /* BOTÓN */
 .btn {
-  margin: 30px auto;
+  margin: 15px auto 10px auto;
   display: block;
   padding: 12px 25px;
   border: 1px solid black;
@@ -81,11 +81,24 @@ body {
 /* SECCIÓN */
 .section {
   text-align: center;
-  padding: 30px 20px;
+  padding: 10px 20px 30px 20px;
 }
 
 .section h2 {
   font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.section h2::after {
+  content: "";
+  width: 60%;
+  height: 2px;
+  background: #bbb;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
 }
 
 .section p {
@@ -121,10 +134,14 @@ body {
   border-radius: 10px;
 }
 
-/* TÍTULOS */
+/* SUBTÍTULOS PREMIUM */
 .col h3 {
-  margin-top: 10px;
-  text-decoration: underline;
+  margin-top: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #222;
 }
 </style>
 
@@ -156,17 +173,17 @@ body {
 <div class="grid">
 
   <div class="col" onclick="window.location.href='sobre-mi.html'">
-    <img src=https://i.postimg.cc/j2rzt9t9/IMG-2537.jpg>
+    <img src="https://i.postimg.cc/j2rzt9t9/IMG-2537.jpg">
     <h3>SOBRE MÍ</h3>
   </div>
 
   <div class="col" onclick="window.location.href='servicios.html'">
-    <img src=https://i.postimg.cc/PJkmTcds/IMG-2536.jpg>
+    <img src="https://i.postimg.cc/PJkmTcds/IMG-2536.jpg">
     <h3>SERVICIOS</h3>
   </div>
 
   <div class="col" onclick="window.location.href='podcast.html'">
-    <img src=https://i.postimg.cc/brjQpMqX/IMG-2538.jpg>
+    <img src="https://i.postimg.cc/brjQpMqX/IMG-2538.jpg">
     <h3>PODCAST</h3>
   </div>
 
