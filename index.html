@@ -13,6 +13,7 @@
 <script src="//code.tidio.co/f8tbcsrgfqjaya8fffwvvjn4c8z2nj7s.js" async></script>
 
 <style>
+/* GENERAL */
 body {
   margin: 0;
   font-family: 'Georgia', serif;
@@ -58,6 +59,24 @@ body {
   color: #444;
   letter-spacing: 1px;
   position: relative;
+}
+
+/* TEXTO ANIMADO */
+.texto-animado {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a1b9a;
+  animation: moverTexto 8s ease-in-out infinite;
+  white-space: nowrap;
+  margin: 10px 0;
+}
+
+@keyframes moverTexto {
+  0% { left: -100%; opacity: 0; }
+  20% { left: 10%; opacity: 1; }
+  80% { left: 10%; opacity: 1; }
+  100% { left: 100%; opacity: 0; }
 }
 
 /* BOTÓN */
@@ -145,6 +164,10 @@ body {
 <!-- HERO -->
 <div class="hero">
   <h1>SARA MITRE<br>SANTACOLOMA</h1>
+
+  <!-- TEXTO ANIMADO -->
+  <div class="texto-animado">“Cuida tu mente, ella te guía.”</div>
+
   <p>Psicóloga Psicoterapeuta Cognitivo Conductual</p>
 </div>
 
